@@ -1,6 +1,6 @@
 /*
 
-
+Starting with a simple React component which has a constructor and a render() method. Recalling the React-ness.
 
 */
 
