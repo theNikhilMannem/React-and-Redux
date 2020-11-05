@@ -7,9 +7,10 @@ The only functionality your app has is to add new messages from the user to an u
 
 
 
-
+// Action type.
 const ADD = 'ADD';
 
+// Action creator.
 const addMessage = (message) => {
     return {
         type: ADD,
@@ -17,6 +18,7 @@ const addMessage = (message) => {
     };
 };
 
+// Reducer.
 const messageReducer = (state = [], action) => {
     switch (action.type) {
         case ADD:
@@ -26,4 +28,5 @@ const messageReducer = (state = [], action) => {
     }
 };
 
+// Store.
 const store = Redux.createStore(messageReducer);
